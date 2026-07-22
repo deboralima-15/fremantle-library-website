@@ -71,3 +71,17 @@ body.dark .contactbar{background:#1c1c1c;border-top-color:#333}
 /* Utility */
 .mt-2{margin-top:14px}
 .mt-3{margin-top:22px}
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
