@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fremantle City Library | Login</title>
+  <meta name="description" content="Login to access your library account (simulated).">
+  <meta name="keywords" content="login, account">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">Fremantle City Library</div>
+      <nav aria-label="Main menu">
+        <ul class="navbar"><li><a class="" href="index.html">Home</a></li><li><a class="" href="booklist.html">Book List</a></li><li><a class="" href="bookdetails.html">Book Details</a></li><li><a class="" href="about.html">About</a></li><li><a class="" href="contact.html">Contact</a></li><li><a class="active" href="login.html">Login</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Login</h1>
+<form id="loginForm" class="mt-2">
+  <label for="u">Email</label>
+  <input id="u" type="email" required placeholder="you@example.com">
+
+  <label for="p">Password</label>
+  <input id="p" type="password" required>
+
+  <button class="btn primary" type="submit">Login</button>
+</form>
+
+  </main>
+
+  <div class="contactbar">
+    <div class="inner">
+      <div class="left">
+        <p><span class="icon">✉️</span> info@fremantlelibrary.com</p>
+        <p><span class="icon">📞</span> +61 8 9589 1111</p>
+      </div>
+      <div class="right">
+        <p>Follow us: <span class="icon">▶️</span> YouTube &nbsp; <span class="icon">📘</span> Facebook &nbsp; <span class="icon">📸</span> Instagram</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Fremantle City Library. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
