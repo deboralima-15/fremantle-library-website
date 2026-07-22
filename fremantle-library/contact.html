@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fremantle City Library | Contact</title>
+  <meta name="description" content="Contact form and info.">
+  <meta name="keywords" content="contact, email, phone, form">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">Fremantle City Library</div>
+      <nav aria-label="Main menu">
+        <ul class="navbar"><li><a class="" href="index.html">Home</a></li><li><a class="" href="booklist.html">Book List</a></li><li><a class="" href="bookdetails.html">Book Details</a></li><li><a class="" href="about.html">About</a></li><li><a class="active" href="contact.html">Contact</a></li><li><a class="" href="login.html">Login</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Contact</h1>
+<p><strong>Email:</strong> info@fremantlelibrary.com</p>
+<p><strong>Phone:</strong> +61 8 9589 1111</p>
+
+<form class="mt-2" onsubmit="event.preventDefault(); alert('Formulário enviado (simulado).');">
+  <input type="hidden" name="origin" value="contact-page">
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text" required placeholder="Your name">
+
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+  <label for="tel">Phone</label>
+  <input id="tel" name="tel" type="tel" placeholder="+61 4xx xxx xxx">
+
+  <label for="date">Preferred date</label>
+  <input id="date" name="date" type="date">
+
+  <label for="qty">Number of books to suggest</label>
+  <input id="qty" name="qty" type="number" min="1" max="20" value="1">
+
+  <fieldset>
+    <legend>Reader Type</legend>
+    <label><input type="radio" name="rtype" value="adult" checked> Adult</label>
+    <label><input type="radio" name="rtype" value="teen"> Teen</label>
+  </fieldset>
+
+  <label><input type="checkbox" name="newsletter"> Subscribe to newsletter</label>
+
+  <label for="msg">Message</label>
+  <textarea id="msg" name="message" rows="5" placeholder="How can we help?"></textarea>
+
+  <button class="btn primary" type="submit">Send</button>
+</form>
+
+  </main>
+
+  <div class="contactbar">
+    <div class="inner">
+      <div class="left">
+        <p><span class="icon">✉️</span> info@fremantlelibrary.com</p>
+        <p><span class="icon">📞</span> +61 8 9589 1111</p>
+      </div>
+      <div class="right">
+        <p>Follow us: <span class="icon">▶️</span> YouTube &nbsp; <span class="icon">📘</span> Facebook &nbsp; <span class="icon">📸</span> Instagram</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Fremantle City Library. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
